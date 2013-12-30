@@ -2,6 +2,7 @@ from myproject.projects.models import *
 from django.shortcuts import *
 from django.db.models import *
 
+
 def Main(request):
     list = Project.objects.filter(viewable=True).order_by('-start_date')
 
